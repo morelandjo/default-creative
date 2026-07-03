@@ -1,0 +1,34 @@
+modLoader = "javafml"
+loaderVersion = "[47,)"
+issueTrackerURL = "https://github.com/morelandjo/default-creative/issues"
+license = "GPL-3.0-only"
+
+[[mods]]
+modId = "defaultcreative"
+version = "${version}"
+displayName = "Default Creative"
+authors = "vodmordia"
+description = '''
+Makes Creative the default game mode when creating a new world.
+'''
+
+[[dependencies.defaultcreative]]
+modId = "forge"
+mandatory = true
+versionRange = "[47,)"
+ordering = "NONE"
+side = "CLIENT"
+
+[[dependencies.defaultcreative]]
+modId = "minecraft"
+mandatory = true
+versionRange = "[1.20.1,)"
+ordering = "NONE"
+side = "CLIENT"
+
+[[dependencies.defaultcreative]]
+modId = "architectury"
+mandatory = true
+versionRange = "[9.2.14,)"
+ordering = "AFTER"
+side = "CLIENT"

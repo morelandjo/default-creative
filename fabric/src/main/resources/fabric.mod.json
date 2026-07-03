@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "id": "defaultcreative",
+  "version": "${version}",
+  "name": "Default Creative",
+  "description": "Makes Creative the default game mode when creating a new world.",
+  "authors": [
+    "vodmordia"
+  ],
+  "contact": {
+    "homepage": "https://github.com/morelandjo/default-creative",
+    "sources": "https://github.com/morelandjo/default-creative"
+  },
+  "license": "GPL-3.0-only",
+  "environment": "client",
+  "entrypoints": {
+    "main": [
+      "com.vodmordia.defaultcreative.fabric.DefaultCreativeFabric"
+    ],
+    "client": [
+      "com.vodmordia.defaultcreative.fabric.client.DefaultCreativeFabricClient"
+    ]
+  },
+  "mixins": [
+    "defaultcreative.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.19.3",
+    "minecraft": "~1.20.1",
+    "java": ">=17",
+    "architectury": ">=9.2.14"
+  }
+}
